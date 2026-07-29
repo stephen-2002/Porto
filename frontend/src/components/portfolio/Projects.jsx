@@ -14,6 +14,7 @@ const CategoryRow = ({ cat, index, open, onToggle }) => (
     <button
       data-testid={`project-toggle-${cat.id}`}
       onClick={() => onToggle(cat.id)}
+      aria-expanded={open}
       className="group w-full flex items-center justify-between gap-4 py-6 md:py-8 text-left"
     >
       <div className="flex items-baseline gap-4 md:gap-8">
