@@ -1,0 +1,181 @@
+{
+  "theme": "light",
+  "archetype": "ORGANIC & EARTHY / RETRO VINTAGE",
+  "typography": {
+    "fonts": {
+      "display": {
+        "family": "'Montserrat', sans-serif",
+        "weights": ["900"],
+        "usage": "Huge section titles, Hero text, numbers. Must be uppercase. Do not use Inter."
+      },
+      "accent": {
+        "family": "'Dancing Script', cursive",
+        "weights": ["400", "700"],
+        "usage": "Handwritten signature 'riban', cursive overlays over big text (e.g., 'Creative', 'Let's work')."
+      },
+      "body": {
+        "family": "'DM Sans', sans-serif",
+        "weights": ["400", "500", "700"],
+        "usage": "Clean humanist sans-serif for descriptions, metadata, and buttons."
+      }
+    },
+    "scale": {
+      "h1": "text-6xl md:text-[8vw] leading-none tracking-tighter uppercase font-black",
+      "h2": "text-5xl md:text-7xl leading-tight tracking-tight uppercase font-black text-brand-red",
+      "h3": "text-3xl md:text-4xl font-bold uppercase",
+      "body": "text-base md:text-lg leading-relaxed font-medium text-brand-ink/90",
+      "accent": "text-4xl md:text-6xl font-accent -rotate-3 text-brand-ink"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F4F1EA",
+      "secondary": "#EAE4D3",
+      "description": "Warm beige/cream mimicking physical paper."
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#4A4A4A",
+      "description": "Off-black ink, never pure black."
+    },
+    "brand": {
+      "red": "#E53935",
+      "blue": "#A9C1D9",
+      "description": "Bold red for primary accents/headers, dusty powder blue for secondary blocks/textures."
+    },
+    "surface": {
+      "paper": "#FFFDFC",
+      "description": "Off-white for photo frames and cards."
+    }
+  },
+  "visual_enhancers": {
+    "texture": "MANDATORY: Add a fixed SVG noise overlay (`opacity-30 mix-blend-multiply pointer-events-none`) over the entire layout to create a speckled/distressed paper texture.",
+    "image_treatment": "Physical photo / polaroid style. Images must have a thick white border (`p-2` or `p-3` bg-white), a subtle ambient shadow (`shadow-xl shadow-black/10`), and slight random rotations (`rotate-1`, `-rotate-2`, etc.).",
+    "borders": "Use solid 1px or 2px `#1A1A1A` borders for geometric, editorial separations in the layout."
+  },
+  "motion": {
+    "global": "Use `lenis` for smooth momentum scrolling. The site must feel heavy, tactile, and premium.",
+    "hero_reveal": "Kinetic typography reveal. The word 'SRIBAN' animates line-by-line from a hidden mask (Framer Motion `clipPath` or `y` translation inside `overflow-hidden`). Staggered.",
+    "scroll_reveal": "Asymmetric scroll triggers. Elements fade and translate up slightly (`y: 30`, `opacity: 0` to `1`) as they enter the viewport using framer-motion.",
+    "marquee": "One slow, continuous editorial marquee (`react-fast-marquee`) using the display font. High contrast, separating the Hero from the About section.",
+    "micro_interactions": "Hovering over project photos gently lifts them (`-translate-y-2`) and straightens their rotation (`rotate-0`) with a smooth spring transition."
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped (`rounded-full`), thick black outline (`border-2 border-brand-ink`), transparent background. On hover, background fills with `brand-red` and text turns `white`.",
+      "typography": "Body font, uppercase, bold, wide tracking (`tracking-widest`)."
+    },
+    "navigation": {
+      "style": "Sticky/interactive pill-shaped floating nav at the bottom or top. Solid off-white background with blur (`bg-[#F4F1EA]/80 backdrop-blur-md`), surrounded by a thin black border.",
+      "behavior": "Scrolls to sections smoothly using Lenis. Hovering over links animates a small dot or underline."
+    },
+    "project_gallery": {
+      "style": "Collapsible/filterable categories. Clicking a category expands a bento-grid or masonry layout of framed images. Category titles are huge and bold.",
+      "interaction": "Framer motion `AnimatePresence` for smooth opening/closing of category sections."
+    }
+  },
+  "layout_blueprint": {
+    "hero": {
+      "content": "Name 'SRIBAN', tagline 'Graphic Design | UI/UX | Video Editing'.",
+      "design": "Massive 'SRIBAN' text filling the screen. Signature 'riban' in cursive overlaid on top. Subtle parallax background. Cursive accent: 'Creative'. Masked line-by-line reveal on load."
+    },
+    "about": {
+      "content": "Numbered manifesto chapters. Passionate Visual Designer & Video Editor.",
+      "design": "Editorial layout. Huge '01' number. 2-column text block with a humanist sans-serif body. Small badge icons for Photoshop, Illustrator, Premiere Pro, Figma."
+    },
+    "experience_education": {
+      "content": "Salvation Matric Hr. Sec. School (2006-2020), S.A. Engineering College (2020-2024); Sutherland Global Services / Amazon SPS (2024-2026).",
+      "design": "Vertical or horizontal timeline. Use the dusty blue color for timeline nodes. High-contrast typography for dates. Section labeled '02'."
+    },
+    "projects": {
+      "content": "5 Categories: Graphic Design, Illustration & Image Enhancements, Visual Presentation & Edits, Typography & Print Design, UI/UX Design.",
+      "design": "Interactive accordion/collapsible lists. When open, shows a collaged, interactive layout of images with polaroid frames. Accurate descriptions under each. Section labeled '03'."
+    },
+    "core_skills": {
+      "content": "UI/UX, Video Editing, Graphic Design + Tools.",
+      "design": "Cards with retro borders. Tool icons visible. Hovering tilts the cards."
+    },
+    "hobbies": {
+      "content": "Photography, Music, Gaming, Workout.",
+      "design": "Asymmetrical image grid. Images treated as physical photos scattered on a desk. Section labeled '04'."
+    },
+    "contact": {
+      "content": "Email, LinkedIn, Contact Form, Download Resume button.",
+      "design": "Huge 'Let's Work' cursive text in red. Clean minimal form inputs with border-bottom only (no generic boxes). Giant Download Resume pill button. Section labeled '05'."
+    }
+  },
+  "image_urls": {
+    "graphic_design": [
+      {
+        "url": "https://images.pexels.com/photos/18386912/pexels-photo-18386912.jpeg",
+        "description": "Vintage movie posters displayed indoors",
+        "category": "projects"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1580130579792-c4f6ce908069",
+        "description": "Keeping up with science WPA poster",
+        "category": "projects"
+      }
+    ],
+    "ui_ux": [
+      {
+        "url": "https://images.unsplash.com/photo-1695048064952-44b984f2af6d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHx1aSUyMHV4JTIwbW9iaWxlJTIwYXBwJTIwbW9ja3VwfGVufDB8fHx8MTc4MjM1NDUwMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Modern app design mockup on phone",
+        "category": "projects"
+      },
+      {
+        "url": "https://images.pexels.com/photos/35052818/pexels-photo-35052818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Hand holding smartphone blank screen mockup",
+        "category": "projects"
+      }
+    ],
+    "hobbies": [
+      {
+        "url": "https://images.pexels.com/photos/16104735/pexels-photo-16104735.jpeg",
+        "description": "Classic Zenit analog camera (Photography)",
+        "category": "hobbies"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6521626/pexels-photo-6521626.jpeg",
+        "description": "Vintage vinyl record playing (Music)",
+        "category": "hobbies"
+      },
+      {
+        "url": "https://images.pexels.com/photos/28978366/pexels-photo-28978366.jpeg",
+        "description": "Vintage handheld gaming console (Gaming)",
+        "category": "hobbies"
+      },
+      {
+        "url": "https://images.pexels.com/photos/15442382/pexels-photo-15442382.jpeg",
+        "description": "Blue dumbbells (Workout)",
+        "category": "hobbies"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "INSTALLATION: Install `framer-motion`, `@studio-freight/react-lenis` (or `lenis`), `react-fast-marquee`, `lucide-react`.",
+    "NOISE OVERLAY: You must create a full-screen fixed div with an SVG `<filter>` generating fractalNoise. Set it to `mix-blend-multiply` and `pointer-events-none` with opacity 30%. This is critical for the retro paper look.",
+    "FONTS: Import 'Montserrat' (weight 900), 'Dancing Script', and 'DM Sans' from Google Fonts in the index.html or index.css.",
+    "DO NOT USE DEFAULT TAILWIND COLORS: Override the config with the specific hex codes provided in this JSON.",
+    "POLAROID EFFECT: Every image must be wrapped in a container that adds a thick white padding, border, and a subtle rotation (e.g. `rotate-[-3deg] hover:rotate-0 transition-transform`).",
+    "DO NOT CENTER EVERYTHING: Use asymmetrical bento grids or editorial columns (e.g., a massive heading on the left spanning 4 columns, and small body text on the right spanning 2 columns).",
+    "TRANSPARENCY: Never use a fully transparent background for headers/navs if content scrolls under it. Use `backdrop-blur-md` with `bg-[#F4F1EA]/80`.",
+    "HTML COMPONENTS: Use raw HTML + Tailwind + Framer Motion for marketing layouts. Do not use generic Shadcn cards for the project gallery; build a custom collapsible list with polaroid frames.",
+    "TESTING: Add `data-testid` to all navigational elements, category toggles, and form submit buttons."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }` in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN."
+  ]
+}
