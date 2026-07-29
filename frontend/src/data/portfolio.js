@@ -111,6 +111,31 @@ export const CATEGORIES = [
   },
 ];
 
+export const PROJECT_TOOLS = {
+  "Black Friday Sale": ["Photoshop", "Illustrator"],
+  "Red Chilli Farm Fest": ["Illustrator"],
+  "Editorial Portrait Edit": ["Photoshop"],
+  "Piggy Bank Composite": ["Photoshop"],
+  "Blue Bird Icon": ["Illustrator"],
+  "Swan Illustration": ["Illustrator"],
+  "Bee Illustration": ["Illustrator"],
+  "Colourful Bird": ["Illustrator"],
+  "Dream On Me": ["Photoshop"],
+  "Red Chilli Farm Fest Banner": ["Photoshop", "Illustrator"],
+  "Flamos": ["Photoshop"],
+  "Once Upon A Time": ["Photoshop"],
+  "Ginger Beer Brand Mockups": ["Photoshop"],
+  "Free Beer Banner": ["Photoshop", "Illustrator"],
+  "Beuce lexo Business Card": ["Illustrator"],
+  "Requiem Print Card": ["Illustrator"],
+  "Immersive Landing Page": ["Figma"],
+  "App Screens Collage": ["Figma"],
+  "Checkout — Tablet": ["Figma"],
+  "Product Anatomy": ["Figma"],
+  "Mobile Checkout": ["Figma"],
+  "Order Confirmed": ["Figma"],
+};
+
 export const CORE_SKILLS = [
   { title: "Graphic Design", img: `${P}/p14-img02.jpeg`, desc: "Creating visually appealing designs, product mockups, and logos with a focus on detail and usability. I also produce original digital and hand-drawn illustrations that enhance graphic projects and bring ideas to life." },
   { title: "UI/UX", img: `${P}/p14-img03.jpeg`, desc: "Designing intuitive user interfaces and engaging experiences with a focus on usability and aesthetics. Skilled in creating wireframes, prototypes, and mockups that balance functionality with visual appeal." },
