@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.7aa567fc.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.2db2a3be.js",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "main.7aa567fc.css.map": "/%7Brepo-name%7D/static/css/main.7aa567fc.css.map",
+    "main.2db2a3be.js.map": "/%7Brepo-name%7D/static/js/main.2db2a3be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7aa567fc.css",
+    "static/js/main.2db2a3be.js"
+  ]
+}
